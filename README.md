@@ -46,8 +46,7 @@ I loaded the dataset using pickle load() function. Then training, validation and
 
 #### 3. Describe, and identify where in your code, what your final model architecture looks like including model type, layers, layer sizes, connectivity, etc.) Consider including a diagram and/or table describing the final model. ####
 
-
-## LeNet Model Architecture along with description for Traffic Signal classifier ##
+* LeNet Model Architecture along with description for Traffic Signal classifier ##
 
 #### 4. Describe how, and identify where in your code, you trained your model. The discussion can include the type of optimizer, the batch size, number of epochs and any hyperparameters such as learning rate. ####
 
@@ -78,8 +77,9 @@ Validation Accuracy = 0.963
 Model saved
 Test Accuracy = 0.946
 
-##Issues Faced
-If you face "ModuleNotFoundError: No module named 'cv2' mac" then use the following command to fix this
+### Issues Faced ###
+
 ```
+If you face "ModuleNotFoundError: No module named 'cv2' mac" then use the following command to fix this
 Fix: pip install opencv-python
 ```
