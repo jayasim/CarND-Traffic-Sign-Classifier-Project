@@ -18,8 +18,6 @@ The goals / steps of this project are the following:
 
 ### Writeup / README ###
 
-#### 1. Provide a Writeup / README that includes all the rubric points and how you addressed each one. You can submit your writeup as markdown or pdf. You can use this template as a guide for writing the report. The submission includes the project code. ####
-
 You're reading it! and here is a link to my [project code](https://github.com/jayasim/CarND-Traffic-Sign-Classifier-Project-P2/blob/master/Traffic_Sign_Classifier.ipynb)
 
 ### Data Set Summary & Exploration ###
@@ -37,7 +35,7 @@ I loaded the dataset using pickle load() function. Then training, validation and
 
 
 ### Design and Test a Model Architecture ###
-
+LeNet Model Architecture along with description for Traffic Signal classifier
 #### 1. Describe how, and identify where in your code, you preprocessed the image data. What techniques were chosen and why did you choose these techniques? Consider including images showing the output of each preprocessing technique. Pre-processing refers to techniques such as converting to grayscale, normalization, etc. ####
 
 
@@ -46,7 +44,6 @@ I loaded the dataset using pickle load() function. Then training, validation and
 
 #### 3. Describe, and identify where in your code, what your final model architecture looks like including model type, layers, layer sizes, connectivity, etc.) Consider including a diagram and/or table describing the final model. ####
 
-* LeNet Model Architecture along with description for Traffic Signal classifier ##
 
 #### 4. Describe how, and identify where in your code, you trained your model. The discussion can include the type of optimizer, the batch size, number of epochs and any hyperparameters such as learning rate. ####
 
@@ -54,6 +51,7 @@ I loaded the dataset using pickle load() function. Then training, validation and
 
 My Training Results...
 
+```
 EPOCH 1 of 5...
 Training Accuracy = 0.954
 Validation Accuracy = 0.928
@@ -76,10 +74,11 @@ Validation Accuracy = 0.963
 
 Model saved
 Test Accuracy = 0.946
+```
 
 ### Issues Faced ###
 
-```
 If you face "ModuleNotFoundError: No module named 'cv2' mac" then use the following command to fix this
+```
 Fix: pip install opencv-python
 ```
