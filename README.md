@@ -53,27 +53,27 @@ My Training Results...
 
 ```
 EPOCH 1 of 5...
-Training Accuracy = 0.954
-Validation Accuracy = 0.928
+Training Accuracy = 0.959
+Validation Accuracy = 0.924
 
 EPOCH 2 of 5...
 Training Accuracy = 0.986
-Validation Accuracy = 0.950
+Validation Accuracy = 0.951
 
 EPOCH 3 of 5...
-Training Accuracy = 0.986
-Validation Accuracy = 0.955
+Training Accuracy = 0.990
+Validation Accuracy = 0.958
 
 EPOCH 4 of 5...
-Training Accuracy = 0.993
-Validation Accuracy = 0.959
-
-EPOCH 5 of 5...
-Training Accuracy = 0.995
+Training Accuracy = 0.994
 Validation Accuracy = 0.963
 
+EPOCH 5 of 5...
+Training Accuracy = 0.996
+Validation Accuracy = 0.970
+
 Model saved
-Test Accuracy = 0.946
+Test Accuracy = 0.948
 ```
 
 ### Issues Faced ###
