@@ -38,13 +38,16 @@ I loaded the dataset using pickle load() function. Then training, validation and
 LeNet Model Architecture along with description for Traffic Signal classifier
 
 What was the first architecture that was tried and why was it chosen?
+
 The LeNet architecture accepts a 32x32xC image as input, where C is the number of color channels. Since traffic signal images are converted into grayscale during pre-processing of data, C is 1 in this case. But I choose to keep it 3 as i decided not to do greyscaling as part of my preprocessing.
 
 
 What were some problems with the initial architecture?
+
 When I tried this LeNet model on Internet images, it gave me 80% accuracy and making it learn from the bad data to predict can lead to even more robust traffic sign classifier.
 
 How was the architecture adjusted and why was it adjusted?
+
 Intially I used top_k, but it was applied to the logits instead of the softmax probabilities. I have applied tf.nn.softmax on digits before tf.nn.top_k which resulted in better accuracy in predictions.
 
 Which parameters were tuned? How were they adjusted and why?
@@ -53,7 +56,8 @@ Which parameters were tuned? How were they adjusted and why?
 3. Then, the most important step is to normalize the values to go from -0.5 to +0.5 instead of going from 0 to 255. This helps keep the weights smaller and lets the network fit the curve faster.
 
 What are some of the important design choices and why were they chosen?
-My model used LeNet architecture as-is where I just modified output dimensions to predict for 43 classes instead of 10. I used batch size of 128 as it was working fine and I didn't find the need to modify it. I trained the model on different epochs and learning rates which I have explained in below point #5. I used AdamOptimizer as-is which has the benefits of moving averages of parameters (momentum) and converges quickly without hyper-parameter tuning requirements. The learning rate was tried with different values as in this order: 0.001, 0.009, 0.007, 0.005, 0.003, 0.001. As I was getting desired results at 0.001 as well, I kept it to this rate for my final model evaluation.
+
+I've used LeNet architecture as-is where I just modified output dimensions to predict for 43 classes instead of 10. I used batch size of 128 as it was working fine and I didn't find the need to modify it. I trained the model on different epochs and learning rates which I have explained in below point #5. I used AdamOptimizer as-is which has the benefits of moving averages of parameters (momentum) and converges quickly without hyper-parameter tuning requirements. The learning rate was tried with different values as in this order: 0.001, 0.009, 0.007, 0.005, 0.003, 0.001. As I was getting desired results at 0.001 as well, I kept it to this rate for my final model evaluation.
 
 
 
